@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun with traingles</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Is Triangle? -->
+        <h2>Ask the user to input three angles and you say whether the angles make a triangle or not.
+        </h2>
+        <input type="number" class="angleInput" id="angleInputOne">
+        <input type="number" class="angleInput" id="angleInputTwo">
+        <input type="number" class="angleInput" id="angleInputThree">
+        <button id="angleBtn" >Is Triangle?</button>
+        <p id="showOutputIsTriangle"></p>
+
+        <hr>
+
+        <!-- hypotenuse  -->
+        <h2>Calculate hypotenuse of a triangle given the other two sides</h2>
+        <input type="number" class="sideInput" id="sideInputOne">
+        <input type="number" class="sideInput" id="sideInputTwo">
+        <button id="sideBtn">Calculate Hypotenuse</button>
+        <h2 id="showOutputHypotenuse"></h2>
+
+        <hr>
+
+        <!-- Calculate area of triangle -->
+        <h2>Calculate are of triangle</h2>
+        <input type="number" name="" id="baseInput">
+        <input type="number" name="" id="heightInput">
+        <button type="submit" id="areaBtn">Calculate Area</button>
+        <h2 id="showAreaOutput"></h2>
+        <hr>
+
+        <!-- Triangle Quiz  -->
+         <form action="" id="formQuiz">
+            <div class="quiz-container">
+                <p><strong>Question 1: </strong>What is the third angle for the triangle where angle1 = 45° and angle2 = 45°?</p>
+                <label for="">
+                    <input type="radio" name="question1" value="45" id="">45°
+                </label>
+                <label for="">
+                    <input type="radio" name="question1" value="90" id="">90°
+                </label>
+                <label for="">
+                    <input type="radio" name="question1" value="60" id="">60°
+                </label>
+                <p><strong>Question2: </strong> If a triangle has an angle of 90 degrees, what is it called?
+                </p>
+                <label for="">
+                    <input type="radio" name="question2" value="obtuse" id="">obtuse
+                </label>
+                <label for="">
+                    <input type="radio" name="question2" value="acute" id="">acute
+                </label>
+                <label for="">
+                    <input type="radio" name="question2" value="rigth-angled" id="">rigth-angled
+                </label>
+
+                <button id ="submitQuizBtn">Submit Quiz</button>
+                <p id="outputMessage"></p>
+
+            </div>
+
+         </form>
+
+
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
