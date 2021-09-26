@@ -8,69 +8,104 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <nav>
+        <h2>Fun with Triangles</h2>
+        <p>
+            <a href="#triangleOrNot">Is Triangle?</a>
+            <a href="#calcHypotenuse">Calculate Hypotenuse</a>
+            <a href="#areaOfTriangle">Area of Triangle</a>
+            <a href="#triangleQuiz">Triangle Quiz</a>
+        </p>
+    </nav>
     <div class="container">
         <!-- Is Triangle? -->
-        <h2>Ask the user to input three angles and you say whether the angles make a triangle or not.
-        </h2>
-        <input type="number" class="angleInput" id="angleInputOne">
-        <input type="number" class="angleInput" id="angleInputTwo">
-        <input type="number" class="angleInput" id="angleInputThree">
-        <button id="angleBtn" >Is Triangle?</button>
-        <p id="showOutputIsTriangle"></p>
+        <section id="triangleOrNot">
+
+            <h2>Ask the user to input three angles and you say whether the angles make a triangle or not.
+            </h2>
+            <input type="number" class="angleInput" id="angleInputOne" placeholder="Enter angle value">
+            <input type="number" class="angleInput" id="angleInputTwo" placeholder="Enter angle value">
+            <input type="number" class="angleInput" id="angleInputThree" placeholder="Enter angle value">
+            <p></p>
+            <button id="angleBtn" >Is Triangle?</button>
+            <p id="showOutputIsTriangle"></p>
+        </section>
 
         <hr>
 
         <!-- hypotenuse  -->
-        <h2>Calculate hypotenuse of a triangle given the other two sides</h2>
-        <input type="number" class="sideInput" id="sideInputOne">
-        <input type="number" class="sideInput" id="sideInputTwo">
-        <button id="sideBtn">Calculate Hypotenuse</button>
-        <h2 id="showOutputHypotenuse"></h2>
+        <section id="calcHypotenuse">
+            <h2>Calculate hypotenuse of a triangle given the other two sides</h2>
+            <input type="number" class="sideInput" id="sideInputOne" placeholder="Enter side value">
+            <input type="number" class="sideInput" id="sideInputTwo" placeholder="Enter side value">
+            <p></p>
+            <button id="sideBtn">Calculate Hypotenuse</button>
+            <h2 id="showOutputHypotenuse"></h2>
+        </section>
 
         <hr>
 
         <!-- Calculate area of triangle -->
-        <h2>Calculate are of triangle</h2>
-        <input type="number" name="" id="baseInput">
-        <input type="number" name="" id="heightInput">
-        <button type="submit" id="areaBtn">Calculate Area</button>
-        <h2 id="showAreaOutput"></h2>
-        <hr>
+        <section id="areaOfTriangle">
+
+            <h2>Calculate are of triangle</h2>
+            <input type="number" name="" id="baseInput" placeholder="Enter length of base">
+            <input type="number" name="" id="heightInput" placeholder="Enter length of height">
+            <p></p>
+            <button type="submit" id="areaBtn">Calculate Area</button>
+            <h2 id="showAreaOutput"></h2>
+        </section>
+            <hr>
 
         <!-- Triangle Quiz  -->
-         <form action="" id="formQuiz">
-            <div class="quiz-container">
-                <p><strong>Question 1: </strong>What is the third angle for the triangle where angle1 = 45° and angle2 = 45°?</p>
-                <label for="">
-                    <input type="radio" name="question1" value="45" id="">45°
-                </label>
-                <label for="">
-                    <input type="radio" name="question1" value="90" id="">90°
-                </label>
-                <label for="">
-                    <input type="radio" name="question1" value="60" id="">60°
-                </label>
-                <p><strong>Question2: </strong> If a triangle has an angle of 90 degrees, what is it called?
-                </p>
-                <label for="">
-                    <input type="radio" name="question2" value="obtuse" id="">obtuse
-                </label>
-                <label for="">
-                    <input type="radio" name="question2" value="acute" id="">acute
-                </label>
-                <label for="">
-                    <input type="radio" name="question2" value="rigth-angled" id="">rigth-angled
-                </label>
+        <section id="triangleQuiz">
 
-                <button id ="submitQuizBtn">Submit Quiz</button>
-                <p id="outputMessage"></p>
-
-            </div>
-
-         </form>
-
+            <h2>Triangle Quiz</h2>
+            <form action="" id="formQuiz">
+                <div class="quiz-container">
+                    <p><strong>Question 1: </strong>What is the third angle for the triangle where angle1 = 45° and angle2 = 45°?</p>
+                    <label for="">
+                        <input type="radio" name="question1" value="45" id="">45°
+                    </label>
+                    <label for="">
+                        <input type="radio" name="question1" value="90" id="">90°
+                    </label>
+                    <label for="">
+                        <input type="radio" name="question1" value="60" id="">60°
+                    </label>
+                    <p><strong>Question2: </strong> If a triangle has an angle of 90 degrees, what is it called?
+                    </p>
+                    <label for="">
+                        <input type="radio" name="question2" value="obtuse" id="">obtuse
+                    </label>
+                    <label for="">
+                        <input type="radio" name="question2" value="acute" id="">acute
+                    </label>
+                    <label for="">
+                        <input type="radio" name="question2" value="rigth-angled" id="">rigth-angled
+                    </label>
+                    <p></p>
+                    <button id ="submitQuizBtn">Submit Quiz</button>
+                    <p id="outputMessage"></p>
+                    
+                </div>
+                <p></p>
+            </form>
+        </section>
 
     </div>
+
+        <footer>
+            <p>
+                <a target="_blank" href="https://www.linkedin.com/in/ashutoshdash1999/">linkedin</a>
+                &nbsp;
+                <a target="_blank" href="https://twitter.com/ashutoshdash99">twitter</a>
+                &nbsp;
+                <a target="_blank" href="https://github.com/AshutoshDash1999/">github</a>
+                &nbsp;
+                <a target="_blank" href="mailto:dashashutosh1999@gmail.com">gmail</a>
+            </p>
+        </footer>
 
     <script src="script.js"></script>
     
