@@ -34,7 +34,11 @@ function calculateHyptenuse(sideOne, sideTwo){
 function sideStringToNumber(){
     var sideOneInt = parseInt(sideInputOne.value)
     var sideTwoInt = parseInt(sideInputTwo.value)
-    calculateHyptenuse(sideOneInt, sideTwoInt)
+    if (sideOneInt >0 && sideTwoInt){
+        calculateHyptenuse(sideOneInt, sideTwoInt)
+    } else {
+        showOutputHypotenuse.innerText = "Enter a valid input!"
+    }
 }
 
 sideBtn.addEventListener("click", sideStringToNumber)
@@ -56,7 +60,11 @@ function calculateArea(base, height){
 function baseAreaToInt(){
     var baseInt = parseInt(baseInput.value);
     var heightInt = parseInt(heightInput.value);
-    calculateArea(baseInt, heightInt)
+    if (baseInt > 0 && heightInt > 0){
+        calculateArea(baseInt, heightInt)
+    } else {
+        showAreaOutput.innerText = "Enter a valid input!";
+    }
 }
 
 areaBtn.addEventListener("click", baseAreaToInt)
@@ -69,7 +77,7 @@ var formQuiz = document.querySelector("#formQuiz")
 var submitQuizBtn = document.querySelector("#submitQuizBtn")
 var outputMessage = document.querySelector("#outputMessage")
 
-var correctAnswer = ["90", "right-angled"];
+var correctAnswer = ["90", "right-angled", "Equilateral","10cm", "30cm"];
 
 
 function calculateScore(){

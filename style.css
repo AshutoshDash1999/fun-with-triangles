@@ -1,6 +1,5 @@
 body{
     text-align: center;
-    padding: 0;
 }
 
 nav{
@@ -23,8 +22,8 @@ nav a{
 }
 
 section{
-    height: 40vh;
     padding: 3rem;
+    margin: 0 2rem;
 }
 
 input{
@@ -45,7 +44,7 @@ button{
 
 footer {
     background: crimson;
-    padding: 1rem;
+    padding: 2rem;
     border-radius: 20px;
     text-align: center;
     margin-top: 3rem;
